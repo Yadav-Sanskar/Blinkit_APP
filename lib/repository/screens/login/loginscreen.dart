@@ -1,4 +1,5 @@
 
+import 'package:blinkit/repository/screens/bottomnav/bottomnavscreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:blinkit/repository/widgets/uihelper.dart';
@@ -45,7 +46,12 @@ class LoginScreen extends StatelessWidget{
                           // login button
                           SizedBox(height: 15,),
                           SizedBox(height: 48, width: 295,
-                              child:ElevatedButton(onPressed:(){}, style: ElevatedButton.styleFrom(
+                              child:ElevatedButton(onPressed:(){
+                                // ya login button pe click krte he direct main home screen me rendedar hone k liya
+                                {
+                                  Navigator.push(context, MaterialPageRoute(builder:(context)=>BottomNavScreen()));
+                                };
+                              }, style: ElevatedButton.styleFrom(
                                 backgroundColor: Color(0XFFE23744),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(10),
