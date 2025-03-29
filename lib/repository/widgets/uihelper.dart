@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+
+// yaa image ko call kren k liya
 class UiHelper {
   static CustomImage({required String img}) {
     return Image.asset("assets/images/$img");
@@ -22,4 +24,10 @@ class UiHelper {
     );
 
 }
+
+ // text Filed seacrh icon hai
+// static CustomTextField({required TextEditingController Controller , required})
+
+
+
 }

@@ -1,4 +1,5 @@
 import 'package:blinkit/repository/screens/cart/cartscreen.dart';
+import 'package:blinkit/repository/screens/category/categoryscreen.dart';
 import 'package:blinkit/repository/screens/home/homescreen.dart';
 import 'package:blinkit/repository/screens/print/printscreen.dart';
 import 'package:blinkit/repository/widgets/uihelper.dart';
@@ -16,7 +17,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
   List<Widget> pages = [
     Homescreen(),
     Cartscreen(),
-    Cartscreen(),
+    CategoryScreen(),
     Printscreen(),
   ];
 
