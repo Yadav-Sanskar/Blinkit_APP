@@ -11,25 +11,25 @@ class CategoryScreen extends StatelessWidget {
     {"img": "image45.png", "text": "Biscuits & \nBakery"}
   ];
   var secondgrocery = [
-    {"img": "image41.png", "text": "Vegetables & \nFruits"},
-    {"img": "image42.png", "text": "Atta, Dal & \nRice"},
-    {"img": "image43.png", "text": "Oil, Ghee & \nMasala"},
-    {"img": "image44.png", "text": "Dairy, Bread & \nMilk"},
-    {"img": "image45.png", "text": "Biscuits & \nBakery"}
+    {"img": "image21.png", "text": "Dry Fruits &\nCereals"},
+    {"img": "image22.png", "text": "Kitchen &\nAppliances"},
+    {"img": "image23.png", "text": "Tea & \nCoffees"},
+    {"img": "image24.png", "text": "Ice Creams &\nmuch more"},
+    {"img": "image25.png", "text": "Noodles &\nPacket Food"}
   ];
   var snacksanddrinks = [
-    {"img": "image41.png", "text": "Vegetables & \nFruits"},
-    {"img": "image42.png", "text": "Atta, Dal & \nRice"},
-    {"img": "image43.png", "text": "Oil, Ghee & \nMasala"},
-    {"img": "image44.png", "text": "Dairy, Bread & \nMilk"},
-    {"img": "image45.png", "text": "Biscuits & \nBakery"}
+    {"img": "image31.png", "text": "Chips &\nNamkeens"},
+    {"img": "image32.png", "text": "Sweets &\nChocalates"},
+    {"img": "image33.png", "text": "Drinks &\nJuices"},
+    {"img": "image34.png", "text":  "Sauces &\nSpreads "},
+    {"img": "image35.png", "text": "Beauty &\nCosmetics"}
   ];
   var hosuehold = [
-    {"img": "image41.png", "text": "Vegetables & \nFruits"},
-    {"img": "image42.png", "text": "Atta, Dal & \nRice"},
-    {"img": "image43.png", "text": "Oil, Ghee & \nMasala"},
-    {"img": "image44.png", "text": "Dairy, Bread & \nMilk"},
-    {"img": "image45.png", "text": "Biscuits & \nBakery"}
+    {"img": "image36.png", "text": "Vegetables & \nFruits"},
+    {"img": "image37.png", "text": "Atta, Dal & \nRice"},
+    {"img": "image38.png", "text": "Oil, Ghee & \nMasala"},
+    {"img": "image39.png", "text": "Dairy, Bread & \nMilk"},
+    {"img": "image40.png", "text": "Biscuits & \nBakery"}
   ];
 
   @override
@@ -37,73 +37,96 @@ class CategoryScreen extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
-          // SizedBox(
-          //   height: 40,
-          // ),
-          Stack(
-            children: [
-              Container(
-                height: 180,
-                width: double.infinity,
-                color: Color(0XFFF7CB45),
-                child: Column(
+      // stack Haam taab use kre hi taab hame ek k uppar ek kcha dekhanaho
+      Stack(
+      children: [
+      Container(
+      height: 200,
+        width: double.infinity, // taki jitni width phone ki hai utni le sake
+        color: Color(0XFFF7CB45),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start, // ✅ Left align text
+          children: [
+            Row(
+              children: [
+                SizedBox(height: 130, width: 10), // ✅ Spacing ke liye
+                Column( // ✅ Row hata ke Column use kiya
+                  crossAxisAlignment: CrossAxisAlignment.start, // ✅ Left align text
                   children: [
-                    SizedBox(
-                      height: 30,
+                    UiHelper.CustomText(
+                      text: "Blinkit in",
+                      color: Color(0XFF000000),
+                      fontWeight: FontWeight.w700,
+                      fontsize: 12,
                     ),
-                    Row(
-                      children: [
-                        SizedBox(
-                          width: 20,
-                        ),
-                        UiHelper.CustomText(text: "Blinkit in", color: Color(0XFF000000), fontWeight: FontWeight.bold, fontsize: 15)
-
-                      ],
+                    SizedBox(height: 1), // ✅ Text ke beech ka gap
+                    UiHelper.CustomText(
+                      text: "16 minutes",
+                      color: Color(0XFF000000),
+                      fontWeight: FontWeight.w700,
+                      fontsize: 17,
                     ),
-                    Row(
-                      children: [
-                        SizedBox(
-                          width: 20,
-                        ),
-                        UiHelper.CustomText(text: "16 minutes", color: Color(0XFF000000), fontWeight: FontWeight.bold, fontsize: 20)
+                    Row(children: [
 
-
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        SizedBox(
-                          width: 20,
-                        ),
-                        UiHelper.CustomText(text: "HOME ", color:  Color(0XFF000000), fontWeight: FontWeight.bold, fontsize: 14),
-                        UiHelper.CustomText(text: "-Sanskar Yadav, Mumbai, maharashtra ", color: Color(0XFF000000), fontWeight:FontWeight.bold, fontsize: 14)
-
-                      ],
-                    ),
+                      UiHelper.CustomText(text: " Home", color: Color(0XFF000000), fontWeight: FontWeight.w700, fontsize: 12),
+                      UiHelper.CustomText(text: " -Sanskar Yadav, Mumbai, maharashtra", color: Color(0XFF000000), fontWeight: FontWeight.w400, fontsize: 12),
+                    ],)
                   ],
+
                 ),
-              ),
-              Positioned(
-                right: 20,
-                bottom: 70,
-                child: CircleAvatar(
-                  radius: 15,
-                  backgroundColor: Colors.white,
-                  child: Icon(
-                    Icons.person,
-                    color: Colors.black,
-                    size: 20,
+              ],
+            ),
+
+            Center(
+              // ✅ Poore screen ke center me le aayega
+              child: SizedBox(
+                height: 40,
+                width: 350, // 🔹 Search box ka width set kiya
+                child: TextField(
+                  decoration: InputDecoration(
+                    hintText: "Search...",
+                    prefixIcon: Padding(
+                      padding: EdgeInsets.only(top: 4, left: 12), // 🔹 Icon ka spacing adjust
+                      child: Icon(Icons.search, size: 25),
+                    ),
+
+                    suffixIcon: Padding(
+                      padding: EdgeInsets.only(top: 8, right: 8), // 🔹 Top aur Right me spacing
+                      child: Icon(Icons.mic, color: Colors.black, size: 24),
+                    ),
+
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      borderSide: BorderSide.none,
+                    ),
+                    filled: true,
+                    fillColor: Colors.white,
+                    contentPadding: EdgeInsets.only(top: 15 ),// search k to se liya hai
                   ),
                 ),
               ),
-              // Positioned(
-              //     bottom: 30,
-              //     left: 20,
-              //     child: UiHelper.CustomTextField(controller: searchController))
-            ],
+            ),
+
+
+          ],
+        ),
+      ),
+      Positioned(  // Positioned se rap kiya show padding or marring deyb sake ealsiy
+          right: 20,
+          top: 50,
+          child: CircleAvatar(
+            radius: 17,
+            backgroundColor: Colors.white,
+            child: Icon(Icons.person,color:Colors.black, size: 25,),
+            // backgroundImage: AssetImage("assets/images/user.png"),  // isay haam is lya use nhi kr rahe hai bcz image blur ho jara raha tha
+
+          )
+      ),
+      ],
+
           ),
           SizedBox(
-            height: 30,
+            height: 20,
           ),
           Row(
             children: [
@@ -116,8 +139,10 @@ class CategoryScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                   fontsize: 14,
                   )
+
             ],
           ),
+
           SizedBox(
             height: 10,
           ),
