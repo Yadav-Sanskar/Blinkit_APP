@@ -1,16 +1,37 @@
-# blinkit
+# 🚀 Blinkit Clone App (Flutter)
 
-A new Flutter project.
+A clean and fast UI clone of the Blinkit App made using Flutter.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📸 App UI Screenshots
 
-A few resources to get you started if this is your first Flutter project:
+<table>
+  <tr>
+    <td><img src="screenshots/1.png" alt="Screenshot 1" width="250"/></td>
+    <td><img src="screenshots/2.png" alt="Screenshot 2" width="250"/></td>
+    <td><img src="screenshots/3.png" alt="Screenshot 3" width="250"/></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/4.png" alt="Screenshot 4" width="250"/></td>
+    <td><img src="screenshots/5.png" alt="Screenshot 5" width="250"/></td>
+    <td><img src="screenshots/6.png" alt="Screenshot 6" width="250"/></td>
+  </tr>
+</table>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Built With
+
+- **Flutter** – Fast UI toolkit for building beautiful native apps
+- **Dart** – Programming language for Flutter
+
+---
+
+## 👨‍💻 Developer
+
+Made with ❤️ by **Sanskar Yadav**  
+[LinkedIn](https://www.linkedin.com/in/your-profile) • [GitHub](https://github.com/yadavsanskar591)
+
+---
+
