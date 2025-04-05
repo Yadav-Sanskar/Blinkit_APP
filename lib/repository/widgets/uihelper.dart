@@ -25,8 +25,21 @@ class UiHelper {
 
 }
 
- // text Filed seacrh icon hai
-// static CustomTextField({required TextEditingController Controller , required})
+// ADD button liya hai
+static CustomButtom(VoidCallback callback){
+    return Container(
+      height: 18,
+      width: 30,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border.all(
+          color: Color(0XFF27AF34)
+        ),
+        borderRadius: BorderRadius.circular(4)
+      ),
+      child: Center(child: Text("add", style: TextStyle(fontSize: 10, color: Color(0XFF27AF34), ),),),
+    );
+}
 
 
 

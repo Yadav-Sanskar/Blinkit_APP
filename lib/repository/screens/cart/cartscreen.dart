@@ -1,4 +1,5 @@
 import 'package:blinkit/repository/widgets/uihelper.dart';
+
 import 'package:flutter/material.dart';
 
 class Cartscreen extends StatelessWidget {
@@ -95,7 +96,171 @@ class Cartscreen extends StatelessWidget {
               )
               ),
             ],
-          )
+          ),
+          UiHelper.CustomImage(img: "shopping-cart.png"),
+          SizedBox(height: 20,),
+          UiHelper.CustomText(text: "Reordering will be easy", color: Color(0XFF000000), fontWeight: FontWeight.w700, fontsize: 16,fontfamily: "bold"),
+          UiHelper.CustomText(text: "Items you order will show up here so you can buy", color: Color(0XFF000000), fontWeight: FontWeight.bold, fontsize: 12),
+          UiHelper.CustomText(text: "them again easily.", color: Color(0XFF000000), fontWeight: FontWeight.bold, fontsize: 12),
+
+
+          // 2nd row
+          SizedBox(height: 15),
+          Row(
+            children: [
+              SizedBox(width: 20),
+              UiHelper.CustomText(
+                text: "Bestsellers",
+                color: Color(0xFF000000),
+                fontWeight: FontWeight.w600,
+                fontsize: 16,
+                fontfamily: "bold",
+              ),
+            ],
+          ),
+          SizedBox(height: 10),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(width: 20),
+
+              // ---------- Item 1 ----------
+              Column(
+                children: [
+                  Stack(
+                    children: [
+                      UiHelper.CustomImage(img: "image 45.png"),
+                      Padding(
+                        padding: EdgeInsets.only(top: 95, left: 65),
+                        child: UiHelper.CustomButtom(() {}),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 5),
+                  UiHelper.CustomText(
+                    text: "Amul Slim Trim",
+                    color: Color(0xFF000000),
+                    fontWeight: FontWeight.w400,
+                    fontsize: 10,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 2,right: 50),
+                    child: Row(children: [
+                      UiHelper.CustomImage(img: "timer3.png"),
+                      UiHelper.CustomText(text: "16 MINS", color: Color(0XFF9C9C9C), fontWeight: FontWeight.w400, fontsize: 10)
+
+                    ],
+                    ),
+                  ),
+                  SizedBox(height:10 ,),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 2,right: 40),
+                    child: Row(children: [
+                      UiHelper.CustomImage(img: "image 49.png"),
+                      UiHelper.CustomText(text: "32", color: Colors.black, fontWeight: FontWeight.w700, fontsize: 15,fontfamily: "bold")
+
+                    ],
+                    ),
+                  )
+
+
+
+                ],
+
+              ),
+
+              SizedBox(width: 20),
+
+              // ---------- Item 2 ----------
+              Column(
+                children: [
+                  Stack(
+                    children: [
+                      UiHelper.CustomImage(img: "image4.png"),
+                      Padding(
+                        padding: EdgeInsets.only(top: 95, left: 65),
+                        child: UiHelper.CustomButtom(() {}),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 5),
+                  UiHelper.CustomText(
+                    text: "Potato (Aloo)",
+                    color: Color(0xFF000000),
+                    fontWeight: FontWeight.w400,
+                    fontsize: 10,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 2,right: 40),
+                    child: Row(children: [
+                      UiHelper.CustomImage(img: "timer3.png"),
+                      UiHelper.CustomText(text: "16 MINS", color: Color(0XFF9C9C9C), fontWeight: FontWeight.w400, fontsize: 10)
+
+                    ],
+                    ),
+                  ),
+                  SizedBox(height:10 ,),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 2,right: 40),
+                    child: Row(children: [
+                      UiHelper.CustomImage(img: "image 49.png"),
+                      UiHelper.CustomText(text: "32", color: Colors.black, fontWeight: FontWeight.w700, fontsize: 15,fontfamily: "bold")
+
+                    ],
+                    ),
+                  ),
+
+                ],
+              ),
+
+              SizedBox(width: 20),
+
+              // ---------- Item 3 ----------
+              Column(
+                children: [
+                  Stack(
+                    children: [
+                      UiHelper.CustomImage(img: "image46.png"),
+                      Padding(
+                        padding: EdgeInsets.only(top: 95, left: 65),
+                        child: UiHelper.CustomButtom(() {}),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 5),
+                  UiHelper.CustomText(
+                    text: "Hybrid Tomato",
+                    color: Color(0xFF000000),
+                    fontWeight: FontWeight.w400,
+                    fontsize: 10,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 2,right: 40),
+                    child: Row(children: [
+                      UiHelper.CustomImage(img: "timer3.png"),
+                      UiHelper.CustomText(text: "16 MINS", color: Color(0XFF9C9C9C), fontWeight: FontWeight.w400, fontsize: 10)
+
+                    ],
+                    ),
+                  ),
+                  SizedBox(height:10 ,),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 2,right: 40),
+                    child: Row(children: [
+                      UiHelper.CustomImage(img: "image 49.png"),
+                      UiHelper.CustomText(text: "32", color: Colors.black, fontWeight: FontWeight.w700, fontsize: 15,fontfamily: "bold")
+
+                    ],
+                    ),
+                  ),
+                ],
+
+              ),
+
+            ],
+          ),
+
+
         ],
       ),
     );
