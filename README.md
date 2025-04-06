@@ -33,6 +33,6 @@ A clean and fast UI clone of the Blinkit App made using Flutter.
 Made with ❤️ by **Sanskar Yadav**  
 • [LinkedIn – Sanskar Yadav](https://www.linkedin.com/in/sanskar-yadav-721710229) 
 <br>
-• [GitHub](https://portfolio-drab-phi-82.vercel.app/)
+• [Portfolio -Sanskar Yadav](https://portfolio-drab-phi-82.vercel.app/)
 
 ---
